@@ -46,10 +46,12 @@ crud-api/
 ├── requirements.txt
 └── README.md
 
-Running the API
-Prerequisites
+---
 
-Docker Desktop
+## Running the API
+**Prerequisites**
+
+**Docker Desktop**
 
 Start the application
 docker compose up --build
