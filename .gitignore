@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# SQLite database
+data/
+*.db
+*.db-wal
+*.db-shm
+
+# VS Code
+.vscode/
+
+# Docker
+*.log
