@@ -8,7 +8,7 @@ The project focuses on clarity, minimal infrastructure, and clean architecture u
 
 ## Overview
 
-This API exposes a basic CRUD interface for managing `items`.  
+This API exposes a basic CRUD interface for managing `items`.
 It is designed to be:
 
 - Easy to run locally
@@ -22,18 +22,17 @@ Interactive API documentation is automatically generated via Swagger.
 
 ## Tech Stack
 
-- **FastAPI** – API framework
-- **SQLite** – Embedded database
-- **SQLite WAL mode** – Improved concurrency
-- **SQLModel** – ORM + validation
-- **Docker & Docker Compose** – Containerization and runtime
-- **Uvicorn** – ASGI server
+- FastAPI – API framework
+- SQLite – Embedded database
+- SQLite WAL mode – Improved concurrency
+- SQLModel – ORM + validation
+- Docker & Docker Compose – Containerization and runtime
+- Uvicorn – ASGI server
 
 ---
 
 ## Project Structure
 
-```text
 crud-api/
 ├── app/
 │   ├── main.py
@@ -49,54 +48,53 @@ crud-api/
 ---
 
 ## Running the API
-**Prerequisites**
 
-**Docker Desktop**
+### Prerequisites
+- Docker Desktop
 
-Start the application
+### Start the application
+
 docker compose up --build
 
-
 The API will be available at:
+- http://localhost:8000
 
-http://localhost:8000
+---
 
-API Documentation
+## API Documentation
 
 Interactive Swagger documentation is available at:
+- http://localhost:8000/docs
 
-http://localhost:8000/docs
+---
 
-Available Endpoints
+## Available Endpoints
 
-POST /items
+- POST /items
+- GET /items
+- GET /items/{id}
+- PUT /items/{id}
+- PATCH /items/{id}
+- DELETE /items/{id}
 
-GET /items
+---
 
-GET /items/{id}
+## Database
 
-PUT /items/{id}
+- SQLite file-based database stored at ./data/app.db
+- Write-Ahead Logging (WAL) enabled
+- Database files are not committed to version control
 
-PATCH /items/{id}
+---
 
-DELETE /items/{id}
+## Development Notes
 
-Database
+- Database tables are created automatically on startup
+- No external services required
+- Authentication and HTTPS intentionally omitted for simplicity
 
-SQLite file-based database stored at ./data/app.db
+---
 
-Write-Ahead Logging (WAL) enabled
+## License
 
-Database files are not committed to version control
-
-Development Notes
-
-Database tables are created automatically on startup
-
-No external services required
-
-Authentication and HTTPS intentionally omitted for simplicity
-
-License
-
-This project is provided for educational and demonstration purposes
+This project is provided for educational and demonstration purposes.
