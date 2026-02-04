@@ -32,6 +32,7 @@ Interactive API documentation is automatically generated via Swagger.
 ---
 
 ## Project Structure
+```text
 
 crud-api/
 ├── app/
@@ -44,6 +45,8 @@ crud-api/
 ├── docker-compose.yml
 ├── requirements.txt
 └── README.md
+
+```text
 
 ---
 
