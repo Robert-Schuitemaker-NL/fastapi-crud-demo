@@ -46,7 +46,7 @@ crud-api/
 ├── requirements.txt
 └── README.md
 
-```text
+```
 
 ---
 
